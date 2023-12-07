@@ -1,4 +1,5 @@
 import './globals.css';
+import { fontMain } from '@/fonts';
 
 export const metadata = {
   title: 'django-next.js',
@@ -6,8 +7,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="ru">
+      <body style={fontMain.style}>{children}</body>
     </html>
   );
 }

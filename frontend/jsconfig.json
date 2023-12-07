@@ -2,7 +2,9 @@
   "compilerOptions": {
     "paths": {
       "@/*": ["./src/*"],
-      "@/fonts": ["./src/app/styles/fonts"]
+      "@/fonts": ["./src/app/styles/fonts"],
+      "@/ui/*": ["./src/components/ui/*"],
+      "@/components/*": ["./src/components/*"]
     }
   }
 }

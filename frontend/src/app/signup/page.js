@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { fontMain } from '@/fonts';
+import Title from '@/ui/Title';
 
 export const metadata = {
   title: 'Sign up',
@@ -7,12 +7,9 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <section
-      className="h-screen flex flex-col justify-center items-center text-zinc-900"
-      style={fontMain.style}
-    >
+    <section className="h-screen flex flex-col justify-center items-center text-zinc-900">
       <div>
-        <div className="text-9xl font-black">SIGN UP</div>
+        <Title>SIGN UP</Title>
         <Link href="/"> Index </Link>
       </div>
     </section>

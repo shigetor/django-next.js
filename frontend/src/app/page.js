@@ -1,14 +1,11 @@
 import Link from 'next/link';
-import { fontMain } from '@/fonts';
+import Title from '@/ui/Title';
 
 export default function Index() {
   return (
-    <section
-      className="h-screen flex flex-col justify-evenly items-center text-zinc-900"
-      style={fontMain.style}
-    >
+    <section className="h-screen flex flex-col justify-evenly items-center text-zinc-900">
       <div className="flex flex-col justify-evenly h-full">
-        <div className="text-9xl font-black">django-next.js</div>
+        <Title>django-next.js</Title>
         <div className="flex flex-col gap-3">
           <Link href="/signin" className="underline-offset-8 hover:underline">Sign In</Link>
           <Link href="/signup" className="underline-offset-8 hover:underline">Sign Up</Link>
