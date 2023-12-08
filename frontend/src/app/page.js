@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import PrettyLink from "@/ui/PrettyLink";
 import Title from '@/ui/Title';
 
 export default function Index() {
@@ -7,8 +7,8 @@ export default function Index() {
       <div className="flex flex-col justify-evenly h-full">
         <Title>django-next.js</Title>
         <div className="flex flex-col gap-3">
-          <Link href="/signin" className="underline-offset-8 hover:underline">Sign In</Link>
-          <Link href="/signup" className="underline-offset-8 hover:underline">Sign Up</Link>
+          <PrettyLink href="/signin">Sign In</PrettyLink>
+          <PrettyLink href="/signup">Sign Up</PrettyLink>
         </div>
       </div>
     </section>
